@@ -1,0 +1,32 @@
+<h3>Lista de Series</h3>
+<h4>(Las series actualmente en emisión seran remarcadas en <span class="text-success">Verde</span>!)</h4>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Portada</th>
+            <th>Titulo</th>
+            <th>Genero</th>
+            <th>Inicio de emisión</th>
+            <th>Calificación</th>
+            <th>Favoritos</th>
+            <th>Calificar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let serie of beers" [ngClass]="{liquidacion: serie.enEmision}">
+            <td><img width="100" class="img-thumbnail" [src]="serie.portada" [alt]="serie.nombre"></td>
+            <td>{{serie.nombre}}</td>
+            <td>{{serie.genero}}</td>
+            <td>{{serie.inicioEmision | date}}</td>
+            <td>{{serie.calificacionActual}}</td>
+            <td>
+                <button class="btn btn-warning btn-sm fav" (click)="addToFavoritos(serie)" *ngIf="!serie.favorito">Añadir a Favoritos</button>
+                <button class="btn btn-danger btn-sm fav" (click)="deleteToFavoritos(serie)" *ngIf="serie.favorito">Quitar de favoritos</button>
+            </td>
+            <td>
+                <app-form-votacion [(calificacionActual)]="serie.calificacionActual" [(cantCalificaciones)]="serie.cantCalificaciones"></app-form-votacion>
+            </td>
+        </tr>
+    </tbody>
+</table>

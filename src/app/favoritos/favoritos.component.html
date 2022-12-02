@@ -1,0 +1,9 @@
+<h3>Lista de Favoritos</h3>
+<ul>
+    <li *ngFor="let serie of listaSeriesFavoritas$ | async">
+        <div class="favoritos">
+            {{serie.nombre}} : {{serie.calificacionActual}}
+            <img id="estrella" src="assets/img/estrella.png" alt="estrella-calificacion">
+        </div>
+    </li>
+</ul>

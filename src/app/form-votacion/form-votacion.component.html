@@ -1,0 +1,12 @@
+<div class="calificar">
+    <form action="">
+        <select name="select-calificar" id="" [(ngModel)]="cantidad_sumar">
+            <option [ngValue]="1">1</option>
+            <option [ngValue]="2">2</option>
+            <option [ngValue]="3">3</option>
+            <option [ngValue]="4">4</option>
+            <option [ngValue]="5">5</option>
+        </select>
+    </form>
+    <button (click)="calcularCalificacion()" class="btn btn-primary btn-sm">Calificar</button>    
+</div>
