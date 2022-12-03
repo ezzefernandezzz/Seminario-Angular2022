@@ -24,7 +24,7 @@ export class SerieListComponent implements OnInit {
     {
       portada: "https://iili.io/HqGfR3X.jpg",
       nombre: "Dark",
-      genero: "Ciencia Ficcion",
+      genero: "Ciencia Ficción",
       inicioEmision: '2017-12-01',
       calificacionActual: 5,
       cantCalificaciones: 2,
