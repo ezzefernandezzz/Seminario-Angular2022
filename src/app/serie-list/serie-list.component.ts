@@ -11,7 +11,7 @@ export class SerieListComponent implements OnInit {
 
   beers: Serie[]= [
     {
-    portada: "assets/img/betterCS.jpg",
+    portada: "https://iili.io/HqGfu4t.jpg",
     nombre: "Better Call Saul",
     genero: "Crimen",
     inicioEmision: '2015-08-02',
@@ -22,7 +22,7 @@ export class SerieListComponent implements OnInit {
     favorito: false,
     },
     {
-      portada: "/assets/img/dark.jpg",
+      portada: "https://iili.io/HqGfR3X.jpg",
       nombre: "Dark",
       genero: "Ciencia Ficcion",
       inicioEmision: '2017-12-01',
@@ -33,7 +33,7 @@ export class SerieListComponent implements OnInit {
       favorito: false,
     },
     {
-      portada: "assets/img/simpsons.jpg",
+      portada: "https://iili.io/HqGf5an.jpg",
       nombre: "Los Simpsons",
       genero: "Comedia",
       inicioEmision: '1989-12-17',
